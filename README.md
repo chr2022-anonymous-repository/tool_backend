@@ -20,3 +20,14 @@ Either follow the Server configuration instructions to setup a (Ubuntu+NGINX) se
  2. in app.py (inside v0_8), there are hard-coded references to directories:
   - data_dir: "/data/" (location of pre-cached and saved engines)  
     these references need to be changed to where the data is located
+
+
+
+## Scoring Algorithms (aka 'Engines')
+
+
+ 0. unzip the archive of the current version of tool [`v0_8.zip`](./v0_8.zip)
+ 1. class-based Python implementations of the engines can be found at v0_8/src/engines/
+ 2. most functionality in the classes revolves around how data is handled in the baclend and the [front-end API](./API_v0.1.4.yml)
+ 3. the TypicalityEngine and PMIEngine, the current two engines based on phrase probabilities, depend on v0_8/src/ngrams.py; the latter defines n-grams modelling functionality on input corpora
+ 
