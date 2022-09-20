@@ -8,7 +8,7 @@
 
 ## Installation of the Server 
 
-Either follow the Server configuration instructions [here](./server_config/Server_installation_instructions.md) to setup a (Ubuntu+NGINX) server. Or, if you have a server set up, skip this step and directly set up the Flask app:
+Either follow the Server configuration instructions [here](./Server_installation_instructions.md) to setup a (Ubuntu+NGINX) server. Or, if you have a server set up, skip this step and directly set up the Flask app:
 
  0. (the Flask app requires a virtual enviroment to be installed in the folder it is served from (otherwise startup scripts will fail))
 
